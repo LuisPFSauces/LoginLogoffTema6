@@ -1,7 +1,5 @@
 <?php
 
-//require_once 'model/UsuarioPDO.php';
-
 class Usuario {
 
     private $codUsuario;
@@ -77,32 +75,4 @@ class Usuario {
     function setImagenPerfil($imagenPerfil) {
         $this->imagenPerfil = $imagenPerfil;
     }
-
-    /*
-    public static function validarUsuario($codUsuario, $password) {
-        $usuario = null;
-        $aUsuario = UsuarioPDO::validarUsuario($codUsuario, $password);
-        if (!empty($aUsuario)) {
-            $usuario = new Usuario($codUsuario, $aUsuario["Password"], $aUsuario["DescUsuario"], $aUsuario["NumConexiones"], $aUsuario["FechaHoraUltimaConexion"], $aUsuario["Perfil"], $aUsuario["ImagenUsuario"]);
-        }
-        return $usuario;
-    }
-
-    public static function modificarUsuario() {
-        $usuarioEditado = UsuarioPDO::modificarUsuario($this->codUsuario, $this->password, $this->descUsuario);
-        return $usuarioEditado;
-    }
-
-    public static function borrarUsuario($codUsuario) {
-        $borrado = UsuarioPDO::borrarUsuario($codUsuario);
-        return $borrado;
-    }
-
-    public static function registrarUltimaConexion($codUsuario) {
-        setlocale(LC_TIME, 'es_ES.UTF-8'); //Idioma
-        date_default_timezone_set('Europe/Madrid');
-        
-        return UsuarioPDO::registrarUltimaConexion($codUsuario);
-    }
-*/
 }
