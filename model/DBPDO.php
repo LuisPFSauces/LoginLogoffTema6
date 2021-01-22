@@ -4,7 +4,7 @@ class DBPDO {
 
     public static function ejecutaConsulta($sentenciaSQL, $parametros) {
         try {
-            $miDB = new PDO(DNS, USER, PASSWORD);
+            $miDB = new PDO(DSN, USER, PASSWORD);
             $miDB->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             $consulta = $miDB->prepare($sentenciaSQL); //Preparamos la consulta.
             $consulta->execute($parametros); //Ejecutamos la consulta.

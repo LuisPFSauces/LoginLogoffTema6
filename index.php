@@ -3,7 +3,7 @@ require_once 'config/config.php';
 
 session_start();
 
-require_once 'config/configDB.php';
+require_once 'config/confDBPDO.php';
 require_once 'config/lang.php';
 
 if (isset($_SESSION["usuarioDAW204LoginLogoffMulticapaPOO"])){

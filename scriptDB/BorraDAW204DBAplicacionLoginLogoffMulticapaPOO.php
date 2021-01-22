@@ -7,7 +7,7 @@
         require_once "../config/confDBPDO.php";//Incluimos el archivo confDBPDO.php para poder acceder al valor de las constantes de los distintos valores de la conexión 
         
             try {
-                $miDB = new PDO(DNS,USER,PASSWORD);//Instanciamos un objeto PDO y establecemos la conexión
+                $miDB = new PDO(DSN,USER,PASSWORD);//Instanciamos un objeto PDO y establecemos la conexión
                 $miDB->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);//Configuramos las excepciones
                 
                 $sql = <<<EOD
