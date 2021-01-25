@@ -1,6 +1,6 @@
 <?php
-if(isset($_SESSION['usuarioDAW2LoginLogoffMulticapaPOO'])){
-    $usuarioActual = $_SESSION['usuarioDAW2LoginLogoffMulticapaPOO'];
+if(isset($_SESSION['usuarioDAW204LoginLogoffMulticapaPOO'])){
+    $usuarioActual = $_SESSION['usuarioDAW204LoginLogoffMulticapaPOO'];
 }
 
 $aLang = [
